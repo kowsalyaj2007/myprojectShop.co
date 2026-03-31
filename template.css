@@ -1,0 +1,225 @@
+/* ==========================
+   RESET STYLES
+========================== */
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* scroll appears if needed */
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* fixed viewport height */
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+.sidebar {
+  width: 250px;
+  font-size: medium;
+  padding: 30px;
+  border-right: 1px solid #ddd;
+  background: white;
+}
+
+/* FILTER SECTIONS */
+.filter-section {
+  font-size:medium;
+  margin-bottom: 20px;
+}
+
+.filter-section p {
+  cursor: pointer;
+}
+
+.active-text {
+  font-weight: bold;
+}
+
+/* COLORS */
+.colors {
+  display: flex;
+  gap: 10px;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color.active {
+  border: 2px solid black;
+}
+
+/* SIZES */
+.sizes button {
+  margin: 5px;
+  padding: 6px 10px;
+}
+
+.sizes .active {
+  background: black;
+  color: white;
+}
+
+/* APPLY / CLEAR BUTTON */
+.apply-btn {
+  width: 100%;
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* ==========================
+   MAIN CONTENT
+========================== */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1300px;
+  padding: 15px 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+/* SEARCH BAR */
+.search-bar {
+  width: 600px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+/* CONTENT AREA */
+.content {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ==========================
+   GRID
+========================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  min-height: 700px; /* keeps layout uniform */
+}
+
+/* ==========================
+   CARD
+========================== */
+.card {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* EMPTY CARD (HOLD SPACE BUT INVISIBLE) */
+.card.empty {
+  visibility: hidden;
+}
+
+/* PLACEHOLDER CARD FOR OTHER PAGES */
+.card.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  border: 1px dashed #ccc;
+  color: #888;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  height: 250px;
+}
+
+/* TITLE IN PLACEHOLDER */
+.card.placeholder h2 {
+  padding: 10px;
+}
+
+/* ==========================
+   PAGINATION
+========================== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.pagination button:hover {
+  background: black;
+  color: white;
+}
+
+/* ==========================
+   TEXT ALIGNMENT
+========================== */
+.center-text {
+  text-align: center;
+}
