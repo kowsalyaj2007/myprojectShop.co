@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Rating from "@mui/material/Rating";
-import "template.css";
+import "./template.css";
 
 export default function Productwebsitetemplate() {
   const [products, setProducts] = useState([]);
